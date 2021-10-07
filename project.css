@@ -1,0 +1,143 @@
+{margin:0, padding:0;
+box-sizing: border-box;}
+
+main{
+    width: 40%;
+    width: 60%;
+    margin: 50px auto;
+    border:1px solid black;
+    color: white;
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px 150px;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 10px;
+}
+
+.div1{ background-color: red ;
+grid-column: 1/-1;}
+.div2{ background-color: blue;
+grid-row: 2/3; grid-column: 1/-1;
+}
+.div3{background-color: green;}
+.div4{background-color: blueviolet;
+grid-row: 3/5; grid-column: 2/3;
+}
+.div5{background-color: orange;}
+.div6{background-color: black;
+grid-column: 1/-1;
+}
+#logo{
+    width: 70px;
+    height:70px;
+    margin:auto;
+    margin-top: -20px;
+    position: relative;
+    right: 400px;
+    bottom: 45px;
+}
+
+li{
+    list-style: none;
+    margin: 10px 30px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px 20px;
+    color: #fff;
+    border: 1px solid #fff ;
+    border-radius: 50%;
+    position: relative;
+    bottom: 10px;
+     
+}
+
+.div2 ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.div2 ul li
+{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.div2 ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.active, .div2 ul li a:hover
+{
+    background: #2bab0d;
+    border-radius: 1px;
+
+}
+.sub-menu-1
+{
+    display: none;
+
+}
+.div2 ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: rgb(6, 6, 105);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.div2 ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin:10px;
+    position:relative;
+    left: -20px;
+}
+.div2 ul li:hover .sub-menu-1 ul li
+{
+    width:150px;
+    padding:10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.div2 ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: #b40a0a;
+}
+.div6 ul li .fab {
+    font-size: 30px;
+    transition: .6s;
+    color: rgb(138, 152, 156);
+} 
+.div6 ul li .fab:hover {
+    color: #fff;
+}
+.div6 ul li a:hover {
+    transform: translate(0, -10px);
+}
+.div6 ul li:nth-child(1) a:hover {
+    background-color: #1877F2;
+}
+.div6 ul li:nth-child(2) a:hover {
+    background-color: #E4405F;
+}
+.div6 ul li:nth-child(3) a:hover {
+    background-color: #1DA1F2;
+}
+.div6 ul li:nth-child(4) a:hover {
+    background-color: #0A66C2;
+}
+.sub-menu-2
+{
+    display:none;
+}
+.hover-me:hover .sub-menu-2
+{
+    position:absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background:rgb(6, 6, 105);
+}
